@@ -23,7 +23,7 @@ const MissionSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-unir-dark-blue to-unir-medium-blue">
+    <section id="missao" className="py-24 bg-gradient-to-br from-unir-dark-blue to-unir-medium-blue">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
