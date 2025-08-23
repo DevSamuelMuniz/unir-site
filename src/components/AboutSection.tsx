@@ -27,7 +27,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
           {founders.map((founder, index) => (
             <div key={index} className="text-center card-gradient p-8 rounded-2xl shadow-card hover:shadow-elegant transition-smooth">
               <div className="w-20 h-20 bg-unir-vibrant-blue rounded-full flex items-center justify-center mx-auto mb-6">
