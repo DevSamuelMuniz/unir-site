@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
+import heroBackground from "@/assets/hero-background.jpg";
 import { MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
@@ -9,24 +9,32 @@ const HeroSection = () => {
 
   return (
     <section 
-      id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden hero-gradient pt-20"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(12, 37, 72, 0.8), rgba(16, 52, 102, 0.8)), url(${heroImage})`,
+        backgroundImage: `linear-gradient(rgba(12, 37, 72, 0.7), rgba(16, 52, 102, 0.7)), url(${heroBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}
     >
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+        <div className="max-w-5xl mx-auto">
+          {/* Logo UNIR */}
+          <div className="mb-12">
+            <img 
+              src="/lovable-uploads/bc3c4eeb-529c-438d-bf3c-f0b7502e93e0.png" 
+              alt="UNIR - Unity of Innovation in Recife" 
+              className="h-32 md:h-40 lg:h-48 w-auto mx-auto drop-shadow-2xl"
+            />
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
             Transformando realidades com{" "}
             <span className="text-unir-orange">tecnologia</span> e{" "}
             <span className="text-unir-light-green">propósito</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto font-light">
+          <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto font-light">
             Na Unir, unimos inovação tecnológica com valores cristãos para criar soluções que realmente transformam vidas e negócios.
           </p>
           
