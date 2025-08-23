@@ -8,11 +8,6 @@ const AboutSection = () => {
       description: "Especialista em desenvolvimento e arquitetura de sistemas, com foco em soluções escaláveis e inovadoras."
     },
     {
-      name: "John Alencar",
-      role: "Sócio Fundador",
-      description: "Expert em gestão de projetos e estratégia de negócios, unindo visão comercial com propósito transformador."
-    },
-    {
       name: "Samuel Muniz",
       role: "Sócio Fundador",
       description: "Líder em tecnologia e inovação, dedicado a criar soluções que impactam positivamente a sociedade."
