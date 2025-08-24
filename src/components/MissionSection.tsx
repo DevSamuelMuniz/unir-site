@@ -27,7 +27,7 @@ const MissionSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Nosso <span className="text-unir-vibrant-blue">Propósito</span>
+            Nosso <span className="text-blue-300">Propósito</span>
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Cada projeto que desenvolvemos carrega nossa essência: tecnologia que serve, 

@@ -3,14 +3,14 @@ import { Users, Heart, Lightbulb } from "lucide-react";
 const AboutSection = () => {
   const founders = [
     {
-      name: "Eudes Jordão",
-      role: "Sócio Fundador",
-      description: "Especialista em desenvolvimento e arquitetura de sistemas, com foco em soluções escaláveis e inovadoras."
-    },
-    {
       name: "Samuel Muniz",
       role: "Sócio Fundador",
       description: "Líder em tecnologia e inovação, dedicado a criar soluções que impactam positivamente a sociedade."
+    },
+    {
+      name: "Eudes Jordão",
+      role: "Sócio Fundador",
+      description: "Especialista em desenvolvimento e arquitetura de sistemas, com foco em soluções escaláveis e inovadoras."
     }
   ];
 
