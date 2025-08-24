@@ -1,21 +1,21 @@
-import { Users, Crown, Code, BarChart } from "lucide-react";
+
 
 const EquipeSection = () => {
   const team = [
     {
-      icon: <Crown className="w-8 h-8" />,
+      photo: "/lovable-uploads/samuel.png",
       name: "Samuel Muniz",
       role: "Co-CEO",
       description: "Lidera a estratégia e visão da empresa, focando em inovação e crescimento sustentável.",
     },
     {
-      icon: <Crown className="w-8 h-8" />,
+      photo: "/lovable-uploads/eudes.png",
       name: "Eudes Jordão",
       role: "Co-CEO",
       description: "Responsável pelas operações e desenvolvimento de negócios, garantindo excelência em todos os projetos.",
     },
     {
-      icon: <Code className="w-8 h-8" />,
+      photo: "/lovable-uploads/melk.png",
       name: "Melksedek",
       role: "Analista de Sistemas",
       description: "Especialista em análise e desenvolvimento de sistemas, criando soluções tecnológicas eficientes.",
@@ -41,8 +41,12 @@ const EquipeSection = () => {
               key={index}
               className="bg-secondary/30 rounded-2xl p-6 shadow-card hover:shadow-elegant transition-smooth group text-center"
             >
-              <div className="w-20 h-20 bg-unir-vibrant-blue rounded-full flex items-center justify-center mb-6 text-white group-hover:bg-unir-orange transition-smooth mx-auto">
-                {member.icon}
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-6 mx-auto border-4 border-unir-vibrant-blue group-hover:border-unir-orange transition-smooth">
+                <img 
+                  src={member.photo} 
+                  alt={`Foto de ${member.name}`}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <h3 className="text-xl font-semibold text-unir-dark-blue mb-2">
