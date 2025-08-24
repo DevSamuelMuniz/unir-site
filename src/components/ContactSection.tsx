@@ -7,7 +7,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contato" className="py-24 bg-unir-orange relative overflow-hidden">
+    <section id="contato" className="py-24 bg-unir-vibrant-blue relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -57,7 +57,7 @@ const ContactSection = () => {
       
       {/* Background decorative elements */}
       <div className="absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-      <div className="absolute bottom-20 right-20 w-40 h-40 bg-unir-light-green/30 rounded-full blur-2xl"></div>
+      <div className="absolute bottom-20 right-20 w-40 h-40 bg-unir-medium-blue/30 rounded-full blur-2xl"></div>
     </section>
   );
 };

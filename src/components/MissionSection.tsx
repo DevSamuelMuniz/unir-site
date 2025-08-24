@@ -6,19 +6,19 @@ const MissionSection = () => {
       icon: <Target className="w-8 h-8" />,
       title: "Missão",
       description: "Desenvolver soluções tecnológicas inovadoras que transformem negócios e vidas, sempre pautados por valores cristãos e ética profissional.",
-      color: "bg-unir-orange"
+      color: "bg-unir-vibrant-blue"
     },
     {
       icon: <Eye className="w-8 h-8" />,
       title: "Visão",
       description: "Ser referência em tecnologia com propósito, reconhecida pela excelência técnica e pelo impacto positivo na sociedade.",
-      color: "bg-unir-vibrant-blue"
+      color: "bg-unir-medium-blue"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Valores",
       description: "Fé, integridade, inovação, excelência, colaboração e responsabilidade social guiam todas as nossas decisões e ações.",
-      color: "bg-unir-light-green"
+      color: "bg-unir-dark-blue"
     }
   ];
 
@@ -27,7 +27,7 @@ const MissionSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Nosso <span className="text-unir-orange">Propósito</span>
+            Nosso <span className="text-unir-vibrant-blue">Propósito</span>
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Cada projeto que desenvolvemos carrega nossa essência: tecnologia que serve, 
