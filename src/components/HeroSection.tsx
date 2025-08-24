@@ -16,7 +16,7 @@ const HeroSection = () => {
           {/* Logo UNIR */}
           <div className="mb-12">
             <img 
-              src="/lovable-uploads/bc3c4eeb-529c-438d-bf3c-f0b7502e93e0.png" 
+              src="/images/bc3c4eeb-529c-438d-bf3c-f0b7502e93e0.png" 
               alt="UNIR - Unity of Innovation in Recife" 
               className="h-32 md:h-40 lg:h-48 w-auto mx-auto drop-shadow-2xl"
             />

@@ -3,19 +3,19 @@
 const EquipeSection = () => {
   const team = [
     {
-      photo: "/lovable-uploads/samuel.png",
+      photo: "/images/samuel.png",
       name: "Samuel Muniz",
       role: "Co-CEO",
       description: "Lidera a estratégia e visão da empresa, focando em inovação e crescimento sustentável.",
     },
     {
-      photo: "/lovable-uploads/eudes.png",
+      photo: "/images/eudes.png",
       name: "Eudes Jordão",
       role: "Co-CEO",
       description: "Responsável pelas operações e desenvolvimento de negócios, garantindo excelência em todos os projetos.",
     },
     {
-      photo: "/lovable-uploads/melk.png",
+      photo: "/images/melk.png",
       name: "Melksedek",
       role: "Analista de Sistemas",
       description: "Especialista em análise e desenvolvimento de sistemas, criando soluções tecnológicas eficientes.",
