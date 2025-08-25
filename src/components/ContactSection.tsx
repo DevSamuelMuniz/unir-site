@@ -42,7 +42,7 @@ const ContactSection = () => {
               <Mail className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">E-mail</h3>
-            <p className="text-white/90">contato@unir.com.br</p>
+            <p className="text-white/90">contato.unityinnovation@gmail.com</p>
           </div>
           
           <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl">

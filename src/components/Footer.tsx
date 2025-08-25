@@ -63,7 +63,7 @@ const Footer = () => {
                 <a href="#" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="mailto:contato@unir.com.br" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
+                <a href="mailto:contato.unityinnovation@gmail.com" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
                   <Mail className="w-5 h-5" />
                 </a>
               </div>
@@ -73,7 +73,7 @@ const Footer = () => {
               <p className="text-white/80 mb-2">
                 <span className="text-unir-light-green">+55 (81) 98463-9299</span>
               </p>
-              <p className="text-white/80">contato@unir.com.br</p>
+              <p className="text-white/80">contato.unityinnovation@gmail.com</p>
             </div>
           </div>
         </div>
