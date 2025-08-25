@@ -10,16 +10,8 @@ const InspirationalSection = () => {
           </div>
           
           <blockquote className="text-3xl md:text-4xl font-bold text-unir-dark-blue mb-8 leading-relaxed">
-            "Nada é tão pequeno se feito com amor."
+            "Nada é tão pequeno se feito com propósito."
           </blockquote>
-          
-          <div className="flex items-center justify-center mb-8">
-            <ArrowRight className="w-8 h-8 text-unir-vibrant-blue mx-4" />
-          </div>
-          
-          <p className="text-2xl md:text-3xl font-semibold text-unir-dark-blue leading-relaxed">
-            Ao darmos o primeiro passo, você nunca mais estará no mesmo lugar.
-          </p>
           
           <div className="mt-12 p-6 bg-unir-dark-blue/5 backdrop-blur-sm rounded-2xl">
             <p className="text-lg text-unir-dark-blue/80 italic">

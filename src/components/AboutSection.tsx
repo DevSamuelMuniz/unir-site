@@ -51,7 +51,7 @@ const AboutSection = () => {
             </div>
             <h3 className="text-xl font-semibold text-unir-dark-blue mb-4">Nossa Essência</h3>
             <p className="text-muted-foreground">
-              Tecnologia com propósito, desenvolvida com amor e dedicação para transformar realidades.
+              Tecnologia com propósito, desenvolvida com dedicação para transformar realidades.
             </p>
           </div>
           

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Code, Smartphone, Cloud, BarChart, MessageCircle } from "lucide-react";
+import { Code, Smartphone, Cloud, BarChart, MessageCircle, PanelTop } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -21,6 +21,11 @@ const ServicesSection = () => {
       title: "Business Intelligence",
       description: "Transformamos dados em insights valiosos através de dashboards inteligentes e análises avançadas.",
       
+    },
+    {
+      icon: <PanelTop className="w-8 h-8" />,
+      title: "Plataformas SaaS",
+      description: "Desenvolvemos plataformas SaaS personalizadas para atender às necessidades específicas de cada cliente.",
     }
   ];
 
@@ -29,7 +34,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicos" className="py-24 bg-secondary/30">
+    <section id="servicos" className="py-24 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-unir-dark-blue mb-6">

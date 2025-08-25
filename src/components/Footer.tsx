@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description */}
           <div className="md:col-span-2">
-            <h3 className="text-3xl font-bold mb-4">
-              <span className="text-unir-orange">Un</span>ir
+            <h3 className="text-3xl font-bold mb-4">  
+              <span>Unir</span>
             </h3>
             <p className="text-white/80 mb-6 max-w-md leading-relaxed">
               Transformando realidades através da tecnologia com propósito. 
@@ -45,7 +45,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><span className="text-white/80">Desenvolvimento Web</span></li>
               <li><span className="text-white/80">Apps Mobile</span></li>
-              <li><span className="text-white/80">Soluções em Nuvem</span></li>
               <li><span className="text-white/80">Business Intelligence</span></li>
             </ul>
           </div>
@@ -81,7 +80,6 @@ const Footer = () => {
         {/* Final Message */}
         <div className="text-center mt-12 pt-8 border-t border-white/20">
           <p className="text-xl font-medium text-unir-orange mb-4 flex items-center justify-center">
-            <Heart className="w-5 h-5 mr-2" />
             Na Unir, tecnologia com propósito transforma vidas.
           </p>
           <p className="text-white/60">
