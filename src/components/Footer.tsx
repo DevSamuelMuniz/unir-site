@@ -57,10 +57,10 @@ const Footer = () => {
             <div className="flex items-center space-x-6 mb-4 md:mb-0">
               <h5 className="text-lg font-medium">Conecte-se conosco:</h5>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
+                <a href="https://www.linkedin.com/company/unity-innovation" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
+                <a href="https://www.instagram.com/unityinnovation/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a href="mailto:contato.unityinnovation@gmail.com" className="w-10 h-10 bg-unir-vibrant-blue rounded-full flex items-center justify-center hover:bg-unir-orange transition-smooth">
