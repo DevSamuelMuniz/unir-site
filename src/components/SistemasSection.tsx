@@ -69,6 +69,7 @@ const SistemasSection = () => {
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Acessar plataforma
               </Button>
+              </div>
             </a>
           ))}
         </div>
