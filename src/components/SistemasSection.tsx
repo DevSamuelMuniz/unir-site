@@ -10,6 +10,7 @@ const SistemasSection = () => {
       description: "Plataforma de soluções rápidas e simples para problemas do dia a dia. Resolva questões de celular, computador, internet e aplicativos de forma prática.",
       url: "https://fixon.lovable.app/",
       tags: ["Suporte", "Soluções", "Tecnologia"],
+      image: fixonScreenshot,
     },
     {
       name: "Tattoosy",
