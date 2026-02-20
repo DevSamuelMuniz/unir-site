@@ -19,11 +19,11 @@ const Footer = () => {
               Transformando realidades através da tecnologia com propósito. 
               Inovação, fé e ética em cada solução que criamos.
             </p>
-            <Button 
-              variant="cta" 
+            <Button
+              variant="cta"
               onClick={handleWhatsAppClick}
-              className="mb-4"
-            >
+              className="mb-4">
+
               <MessageCircle className="w-5 h-5 mr-2" />
               Atendimento WhatsApp
             </Button>
@@ -83,12 +83,12 @@ const Footer = () => {
             Na Unir, tecnologia com propósito transforma vidas.
           </p>
           <p className="text-white/60">
-            © 2024 Unir. Todos os direitos reservados. | Desenvolvido com amor e dedicação.
+            © 2026 Unir. Todos os direitos reservados. | Desenvolvido com amor e dedicação.
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
