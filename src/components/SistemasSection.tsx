@@ -17,6 +17,7 @@ const SistemasSection = () => {
       description: "Plataforma completa para estúdios de tatuagem. Agendamento online, gestão de artistas e página personalizada para seu estúdio.",
       url: "https://tattoosy.site/",
       tags: ["Agendamento", "Gestão", "Estúdios"],
+      image: tattoosyScreenshot,
     },
   ];
 
