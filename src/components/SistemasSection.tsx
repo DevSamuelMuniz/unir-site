@@ -42,7 +42,7 @@ const SistemasSection = () => {
               rel="noopener noreferrer"
               className="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-smooth block"
             >
-              <div className="w-full h-48 overflow-hidden">
+              <div className="w-full aspect-video overflow-hidden border-b border-border">
                 <img src={sistema.image} alt={`Screenshot do ${sistema.name}`} className="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth" />
               </div>
               <div className="p-8">
