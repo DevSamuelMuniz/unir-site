@@ -40,8 +40,12 @@ const SistemasSection = () => {
               href={sistema.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white rounded-2xl p-8 shadow-card hover:shadow-elegant transition-smooth block"
+              className="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-smooth block"
             >
+              <div className="w-full h-48 overflow-hidden">
+                <img src={sistema.image} alt={`Screenshot do ${sistema.name}`} className="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth" />
+              </div>
+              <div className="p-8">
               <h3 className="text-2xl font-bold text-unir-dark-blue mb-4 group-hover:text-unir-vibrant-blue transition-smooth">
                 {sistema.name}
               </h3>
