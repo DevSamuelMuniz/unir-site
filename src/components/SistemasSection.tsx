@@ -1,5 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import fixonScreenshot from "@/assets/fixon-screenshot.png";
+import tattoosyScreenshot from "@/assets/tattoosy-screenshot.png";
 
 const SistemasSection = () => {
   const sistemas = [
