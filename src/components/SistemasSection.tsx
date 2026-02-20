@@ -1,5 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import fixonScreenshot from "@/assets/fixon-screenshot.png";
+import tattoosyScreenshot from "@/assets/tattoosy-screenshot.png";
 
 const SistemasSection = () => {
   const sistemas = [
@@ -8,12 +10,14 @@ const SistemasSection = () => {
       description: "Plataforma de soluções rápidas e simples para problemas do dia a dia. Resolva questões de celular, computador, internet e aplicativos de forma prática.",
       url: "https://fixon.lovable.app/",
       tags: ["Suporte", "Soluções", "Tecnologia"],
+      image: fixonScreenshot,
     },
     {
       name: "Tattoosy",
       description: "Plataforma completa para estúdios de tatuagem. Agendamento online, gestão de artistas e página personalizada para seu estúdio.",
       url: "https://tattoosy.site/",
       tags: ["Agendamento", "Gestão", "Estúdios"],
+      image: tattoosyScreenshot,
     },
   ];
 
@@ -36,8 +40,12 @@ const SistemasSection = () => {
               href={sistema.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white rounded-2xl p-8 shadow-card hover:shadow-elegant transition-smooth block"
+              className="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-smooth block"
             >
+              <div className="w-full h-48 overflow-hidden">
+                <img src={sistema.image} alt={`Screenshot do ${sistema.name}`} className="w-full h-full object-cover object-top group-hover:scale-105 transition-smooth" />
+              </div>
+              <div className="p-8">
               <h3 className="text-2xl font-bold text-unir-dark-blue mb-4 group-hover:text-unir-vibrant-blue transition-smooth">
                 {sistema.name}
               </h3>
@@ -61,6 +69,7 @@ const SistemasSection = () => {
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Acessar plataforma
               </Button>
+              </div>
             </a>
           ))}
         </div>
