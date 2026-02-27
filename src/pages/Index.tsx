@@ -1,3 +1,4 @@
+import FloatingHeader from "@/components/FloatingHeader";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import MissionSection from "@/components/MissionSection";
@@ -10,7 +11,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen scroll-smooth">
+      <FloatingHeader />
       <HeroSection />
       <AboutSection />
       <MissionSection />
