@@ -1,3 +1,4 @@
+import FloatingHeader from "@/components/FloatingHeader";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import MissionSection from "@/components/MissionSection";
