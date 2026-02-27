@@ -11,7 +11,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen scroll-smooth">
+      <FloatingHeader />
       <HeroSection />
       <AboutSection />
       <MissionSection />
