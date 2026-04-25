@@ -34,13 +34,13 @@ const FloatingHeader = () => {
         visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
-      <div className="mx-4 mt-4 rounded-full bg-background/80 backdrop-blur-xl border border-border shadow-elegant pl-6 pr-2 py-2 flex items-center justify-between max-w-6xl xl:mx-auto">
+      <div className="mx-auto mt-4 w-fit max-w-[95vw] rounded-full bg-background/80 backdrop-blur-xl border border-border shadow-elegant pl-5 pr-2 py-2 flex items-center gap-8">
         <img
           src="/images/bc3c4eeb-529c-438d-bf3c-f0b7502e93e0.png"
           alt="UNIR"
-          className="h-9 w-auto"
+          className="h-8 w-auto"
         />
-        <nav className="hidden md:flex items-center gap-7">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -55,7 +55,7 @@ const FloatingHeader = () => {
         <Button
           size="sm"
           onClick={handleWhats}
-          className="bg-gradient-to-r from-unir-dark-blue to-unir-vibrant-blue hover:from-unir-vibrant-blue hover:to-unir-electric text-white rounded-full h-10 px-5 font-semibold"
+          className="bg-gradient-to-r from-unir-dark-blue to-unir-vibrant-blue hover:from-unir-vibrant-blue hover:to-unir-electric text-white rounded-full h-9 px-4 text-xs font-semibold"
         >
           <MessageCircle className="w-4 h-4 mr-1.5" />
           Vamos conversar
