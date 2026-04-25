@@ -1,78 +1,58 @@
-import { Users, Heart, Lightbulb } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const AboutSection = () => {
-  const founders = [
-    {
-      name: "Samuel Muniz",
-      role: "Sócio Fundador",
-      description: "Líder em tecnologia e inovação, dedicado a criar soluções que impactam positivamente a sociedade."
-    },
-    {
-      name: "Eudes Jordão",
-      role: "Sócio Fundador",
-      description: "Especialista em desenvolvimento e arquitetura de sistemas, com foco em soluções escaláveis e inovadoras."
-    }
+  const stats = [
+    { value: "100%", label: "Foco no cliente" },
+    { value: "2+", label: "Plataformas próprias" },
+    { value: "∞", label: "Propósito em cada projeto" },
   ];
 
   return (
-    <section id="sobre" className="py-24 bg-background">
+    <section id="sobre" className="py-32 bg-background relative">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-unir-dark-blue mb-6">
-            Conheça a <span className="text-unir-vibrant-blue">Unir</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Somos uma empresa de tecnologia que acredita no poder transformador da inovação 
-            quando guiada por valores sólidos e propósito cristão.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
-          {founders.map((founder, index) => (
-            <div key={index} className="text-center card-gradient p-8 rounded-2xl shadow-card hover:shadow-elegant transition-smooth">
-              <div className="w-20 h-20 bg-unir-vibrant-blue rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-10 h-10 text-white" />
-              </div>
-              <h3 className="text-2xl font-semibold text-unir-dark-blue mb-2">
-                {founder.name}
-              </h3>
-              <p className="text-unir-vibrant-blue font-medium mb-4">{founder.role}</p>
-              <p className="text-muted-foreground leading-relaxed">
-                {founder.description}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="text-center p-8">
-            <div className="w-16 h-16 bg-unir-vibrant-blue rounded-full flex items-center justify-center mx-auto mb-6">
-              <Heart className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-xl font-semibold text-unir-dark-blue mb-4">Nossa Essência</h3>
-            <p className="text-muted-foreground">
-              Tecnologia com propósito, desenvolvida com dedicação para transformar realidades.
-            </p>
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          <div className="lg:col-span-5">
+            <span className="section-label mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-unir-vibrant-blue" />
+              Sobre nós
+            </span>
+            <h2 className="display-text text-5xl md:text-6xl lg:text-7xl font-bold text-unir-dark-blue mt-6 leading-none">
+              Construímos o futuro com{" "}
+              <span className="text-unir-vibrant-blue">tecnologia e fé</span>.
+            </h2>
           </div>
-          
-          <div className="text-center p-8">
-            <div className="w-16 h-16 bg-unir-vibrant-blue rounded-full flex items-center justify-center mx-auto mb-6">
-              <Lightbulb className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-xl font-semibold text-unir-dark-blue mb-4">Inovação</h3>
-            <p className="text-muted-foreground">
-              Buscamos constantemente novas formas de solucionar problemas e criar valor para nossos clientes.
+
+          <div className="lg:col-span-7 lg:pt-8">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
+              Na Unir, tecnologia e propósito caminham juntos para criar soluções que
+              transformam o mercado. Nossa missão é impulsionar empresas para o futuro,
+              trazendo uma abordagem personalizada que entende suas necessidades e adapta
+              soluções para alcançar resultados reais.
             </p>
-          </div>
-          
-          <div className="text-center p-8">
-            <div className="w-16 h-16 bg-unir-medium-blue rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-xl font-semibold text-unir-dark-blue mb-4">Comunidade</h3>
-            <p className="text-muted-foreground">
-              Acreditamos no poder da colaboração e no impacto positivo que podemos gerar juntos.
+            <p className="text-base text-muted-foreground leading-relaxed mb-10">
+              Somos guiados por valores cristãos, ética profissional e excelência técnica
+              em cada linha de código que escrevemos.
             </p>
+
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={() => document.querySelector("#servicos")?.scrollIntoView({ behavior: "smooth" })}
+              className="rounded-full border-unir-dark-blue/20 text-unir-dark-blue hover:bg-unir-dark-blue hover:text-white group"
+            >
+              Começar a transformação
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+
+            <div className="grid grid-cols-3 gap-6 mt-16 pt-10 border-t border-border">
+              {stats.map((s) => (
+                <div key={s.label}>
+                  <div className="display-text text-4xl md:text-5xl font-bold text-unir-vibrant-blue mb-2">{s.value}</div>
+                  <div className="text-sm text-muted-foreground leading-tight">{s.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
