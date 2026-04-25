@@ -1,6 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 import fixonScreenshot from "@/assets/fixon-screenshot.png";
 import tattoosyScreenshot from "@/assets/tattoosy-screenshot.png";
+import unirfitScreenshot from "@/assets/unirfit-screenshot.png";
+import prumoScreenshot from "@/assets/prumo-screenshot.png";
 
 const SistemasSection = () => {
   const sistemas = [
@@ -24,7 +26,28 @@ const SistemasSection = () => {
       tags: ["Agendamento", "Gestão", "Marketplace"],
       image: tattoosyScreenshot,
     },
+    {
+      number: "Case 03",
+      name: "Unir FIT",
+      tagline: "Forje sua melhor versão",
+      description:
+        "Ecossistema fitness definitivo para transformar disciplina em resultados reais. Gamificação, nutrição de elite e treinos impiedosos em um só app.",
+      url: "https://unirfit.site/",
+      tags: ["Fitness", "Gamificação", "Mobile"],
+      image: unirfitScreenshot,
+    },
+    {
+      number: "Case 04",
+      name: "Prumo",
+      tagline: "Gestão completa para barbearias",
+      description:
+        "Plataforma de gestão que elimina a burocracia das barbearias. Organize agenda, comissões e caixa em um só lugar e foque no que importa: lucrar.",
+      url: "https://prumo.live/",
+      tags: ["Barbearia", "Gestão", "SaaS"],
+      image: prumoScreenshot,
+    },
   ];
+
 
   return (
     <section id="sistemas" className="py-32 bg-unir-soft">
