@@ -65,11 +65,14 @@ export default {
 				unir: {
 					'dark-blue': 'hsl(var(--unir-dark-blue))',
 					'medium-blue': 'hsl(var(--unir-medium-blue))',
-					'vibrant-blue': 'hsl(var(--unir-vibrant-blue))'
+					'vibrant-blue': 'hsl(var(--unir-vibrant-blue))',
+					'electric': 'hsl(var(--unir-electric))',
+					'soft': 'hsl(var(--unir-soft))'
 				}
 			},
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
+				'display': ['Space Grotesk', 'Poppins', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

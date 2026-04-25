@@ -3,53 +3,55 @@ import { Target, Eye, Shield } from "lucide-react";
 const MissionSection = () => {
   const values = [
     {
-      icon: <Target className="w-8 h-8" />,
+      icon: <Target className="w-6 h-6" />,
       title: "Missão",
-      description: "Desenvolver soluções tecnológicas inovadoras que transformem negócios e vidas, sempre pautados por valores cristãos e ética profissional.",
-      color: "bg-unir-vibrant-blue"
+      description:
+        "Desenvolver soluções tecnológicas inovadoras que transformem negócios e vidas, sempre pautadas por valores cristãos e ética profissional.",
     },
     {
-      icon: <Eye className="w-8 h-8" />,
+      icon: <Eye className="w-6 h-6" />,
       title: "Visão",
-      description: "Ser referência em tecnologia com propósito, reconhecida pela excelência técnica e pelo impacto positivo na sociedade.",
-      color: "bg-unir-medium-blue"
+      description:
+        "Ser referência em tecnologia com propósito, reconhecida pela excelência técnica e pelo impacto positivo na sociedade.",
     },
     {
-      icon: <Shield className="w-8 h-8" />,
+      icon: <Shield className="w-6 h-6" />,
       title: "Valores",
-      description: "Fé, integridade, inovação, excelência, colaboração e responsabilidade social guiam todas as nossas decisões e ações.",
-      color: "bg-unir-dark-blue"
-    }
+      description:
+        "Fé, integridade, inovação, excelência, colaboração e responsabilidade social guiam todas as nossas decisões e ações.",
+    },
   ];
 
   return (
-    <section id="missao" className="py-24 bg-gradient-to-br from-unir-dark-blue to-unir-medium-blue">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Nosso <span className="text-blue-300">Propósito</span>
+    <section id="missao" className="py-32 dark-gradient relative overflow-hidden">
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-unir-electric/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-unir-vibrant-blue/20 rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mb-20">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 backdrop-blur text-xs font-semibold uppercase tracking-widest text-white/80 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-unir-electric" />
+            Nosso propósito
+          </span>
+          <h2 className="display-text text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-none">
+            Tecnologia que serve.<br />
+            <span className="text-white/40">Inovação que transforma.</span>
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Cada projeto que desenvolvemos carrega nossa essência: tecnologia que serve, 
-            inova e transforma com base em valores sólidos.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {values.map((value, index) => (
-            <div 
-              key={index}
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/15 transition-smooth shadow-elegant"
+        <div className="grid md:grid-cols-3 gap-px bg-white/10 rounded-3xl overflow-hidden border border-white/10">
+          {values.map((v) => (
+            <div
+              key={v.title}
+              className="bg-unir-dark-blue/80 backdrop-blur p-10 hover:bg-unir-vibrant-blue/30 transition-smooth group"
             >
-              <div className={`w-16 h-16 ${value.color} rounded-full flex items-center justify-center mx-auto mb-6 text-white`}>
-                {value.icon}
+              <div className="w-12 h-12 rounded-full bg-unir-electric/20 text-unir-electric flex items-center justify-center mb-6 group-hover:bg-unir-electric group-hover:text-white transition-smooth">
+                {v.icon}
               </div>
-              <h3 className="text-2xl font-semibold text-white mb-4">
-                {value.title}
-              </h3>
-              <p className="text-white/90 leading-relaxed">
-                {value.description}
-              </p>
+              <h3 className="display-text text-3xl font-bold text-white mb-4">{v.title}</h3>
+              <p className="text-white/70 leading-relaxed">{v.description}</p>
             </div>
           ))}
         </div>

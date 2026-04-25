@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import MissionSection from "@/components/MissionSection";
 import ServicesSection from "@/components/ServicesSection";
 import SistemasSection from "@/components/SistemasSection";
+import PartnersSection from "@/components/PartnersSection";
 import EquipeSection from "@/components/EquipeSection";
 import InspirationalSection from "@/components/InspirationalSection";
 import ContactSection from "@/components/ContactSection";
@@ -15,9 +16,10 @@ const Index = () => {
       <FloatingHeader />
       <HeroSection />
       <AboutSection />
-      <MissionSection />
       <ServicesSection />
       <SistemasSection />
+      <PartnersSection />
+      <MissionSection />
       <EquipeSection />
       <InspirationalSection />
       <ContactSection />

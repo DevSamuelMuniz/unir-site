@@ -1,32 +1,36 @@
+import { Code, Smartphone, BarChart, PanelTop, ArrowUpRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Code, Smartphone, Cloud, BarChart, MessageCircle, PanelTop } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: <Code className="w-8 h-8" />,
+      icon: <Code className="w-6 h-6" />,
       title: "Desenvolvimento Web",
-      description: "Criamos websites e aplicações web modernas, responsivas e otimizadas, utilizando as mais recentes tecnologias.",
-      
+      description:
+        "Websites e aplicações web modernas, responsivas e otimizadas, com as tecnologias mais atuais do mercado.",
+      tag: "01",
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
+      icon: <Smartphone className="w-6 h-6" />,
       title: "Aplicativos Mobile",
-      description: "Desenvolvemos aplicativos nativos e híbridos para iOS e Android, focando na melhor experiência do usuário.",
-      
+      description:
+        "Apps nativos e híbridos para iOS e Android, focados na melhor experiência do usuário.",
+      tag: "02",
     },
-   
     {
-      icon: <BarChart className="w-8 h-8" />,
+      icon: <BarChart className="w-6 h-6" />,
       title: "Business Intelligence",
-      description: "Transformamos dados em insights valiosos através de dashboards inteligentes e análises avançadas.",
-      
+      description:
+        "Transformamos dados em insights através de dashboards inteligentes e análises avançadas.",
+      tag: "03",
     },
     {
-      icon: <PanelTop className="w-8 h-8" />,
+      icon: <PanelTop className="w-6 h-6" />,
       title: "Plataformas SaaS",
-      description: "Desenvolvemos plataformas SaaS personalizadas para atender às necessidades específicas de cada cliente.",
-    }
+      description:
+        "Plataformas SaaS personalizadas para atender às necessidades específicas de cada cliente.",
+      tag: "04",
+    },
   ];
 
   const handleWhatsAppClick = () => {
@@ -34,48 +38,65 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicos" className="py-24 bg-secondary/20">
+    <section id="servicos" className="py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-unir-dark-blue mb-6">
-            Nossos <span className="text-unir-orange">Serviços</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos soluções tecnológicas completas e personalizadas para 
-            impulsionar o crescimento do seu negócio.
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+          <div className="max-w-3xl">
+            <span className="section-label mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-unir-vibrant-blue" />
+              Soluções
+            </span>
+            <h2 className="display-text text-5xl md:text-6xl lg:text-7xl font-bold text-unir-dark-blue mt-6 leading-none">
+              Soluções desenhadas para{" "}
+              <span className="text-unir-vibrant-blue">desafios reais</span>.
+            </h2>
+          </div>
+          <p className="text-lg text-muted-foreground max-w-md">
+            Da concepção ao deploy, entregamos resultados que se adaptam ao seu negócio
+            e crescem junto com ele.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-2xl p-6 shadow-card hover:shadow-elegant transition-smooth group"
+        <div className="grid md:grid-cols-2 gap-6">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="group relative bg-unir-soft hover:bg-unir-dark-blue rounded-3xl p-10 transition-smooth cursor-pointer overflow-hidden"
+              onClick={handleWhatsAppClick}
             >
-              <div className="w-16 h-16 bg-unir-vibrant-blue rounded-xl flex items-center justify-center mb-6 text-white group-hover:bg-unir-orange transition-smooth">
-                {service.icon}
+              <div className="flex items-start justify-between mb-12">
+                <div className="w-14 h-14 rounded-2xl bg-background text-unir-vibrant-blue flex items-center justify-center group-hover:bg-unir-electric group-hover:text-unir-dark-blue transition-smooth">
+                  {service.icon}
+                </div>
+                <span className="text-sm font-mono text-unir-vibrant-blue/60 group-hover:text-unir-electric transition-smooth">
+                  {service.tag}
+                </span>
               </div>
-              
-              <h3 className="text-xl font-semibold text-unir-dark-blue mb-3">
+
+              <h3 className="display-text text-3xl md:text-4xl font-bold text-unir-dark-blue group-hover:text-white mb-4 transition-smooth">
                 {service.title}
               </h3>
-              
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-muted-foreground group-hover:text-white/70 leading-relaxed mb-8 transition-smooth">
                 {service.description}
               </p>
-              
-              
-              <Button 
-                variant="outline" 
-                size="sm" 
-                onClick={handleWhatsAppClick}
-                className="w-full border-unir-vibrant-blue text-unir-vibrant-blue hover:bg-unir-vibrant-blue hover:text-white"
-              >
-                <MessageCircle className="w-4 h-4 mr-2" />
-                Quero saber mais
-              </Button>
+
+              <div className="flex items-center gap-2 text-sm font-semibold text-unir-vibrant-blue group-hover:text-unir-electric transition-smooth">
+                Saiba mais
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 flex justify-center">
+          <Button
+            size="lg"
+            onClick={handleWhatsAppClick}
+            className="bg-unir-dark-blue hover:bg-unir-vibrant-blue text-white rounded-full h-14 px-8 font-semibold"
+          >
+            <MessageCircle className="w-5 h-5 mr-2" />
+            Fale com um especialista
+          </Button>
         </div>
       </div>
     </section>
