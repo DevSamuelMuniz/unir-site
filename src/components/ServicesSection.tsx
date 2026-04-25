@@ -48,7 +48,7 @@ const ServicesSection = () => {
             </span>
             <h2 className="display-text text-5xl md:text-6xl lg:text-7xl font-bold text-unir-dark-blue mt-6 leading-none">
               Soluções desenhadas para{" "}
-              <span className="text-unir-vibrant-blue">desafios reais</span>.
+              <span className="bg-gradient-to-r from-unir-vibrant-blue to-unir-electric bg-clip-text text-transparent">desafios reais</span>.
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-md">

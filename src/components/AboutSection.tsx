@@ -19,7 +19,7 @@ const AboutSection = () => {
             </span>
             <h2 className="display-text text-5xl md:text-6xl lg:text-7xl font-bold text-unir-dark-blue mt-6 leading-none">
               Construímos o futuro com{" "}
-              <span className="text-unir-vibrant-blue">tecnologia e fé</span>.
+              <span className="bg-gradient-to-r from-unir-vibrant-blue to-unir-electric bg-clip-text text-transparent">tecnologia e fé</span>.
             </h2>
           </div>
 
