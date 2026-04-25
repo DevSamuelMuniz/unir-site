@@ -11,14 +11,14 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden hero-gradient pt-32 pb-20">
+    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden hero-gradient pt-8 pb-20">
       {/* Decorative floating orbs */}
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-unir-vibrant-blue/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 -right-20 w-[500px] h-[500px] bg-unir-electric/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Top bar with logo + availability */}
-        <div className="flex items-center justify-between mb-16 md:mb-24">
+        <div className="flex items-center justify-between mb-10 md:mb-14">
           <img
             src="/images/bc3c4eeb-529c-438d-bf3c-f0b7502e93e0.png"
             alt="UNIR"
