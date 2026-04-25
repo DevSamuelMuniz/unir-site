@@ -55,7 +55,7 @@ const FloatingHeader = () => {
         <Button
           size="sm"
           onClick={handleWhats}
-          className="bg-unir-dark-blue hover:bg-unir-vibrant-blue text-white rounded-full h-10 px-5 font-semibold"
+          className="bg-gradient-to-r from-unir-dark-blue to-unir-vibrant-blue hover:from-unir-vibrant-blue hover:to-unir-electric text-white rounded-full h-10 px-5 font-semibold"
         >
           <MessageCircle className="w-4 h-4 mr-1.5" />
           Vamos conversar

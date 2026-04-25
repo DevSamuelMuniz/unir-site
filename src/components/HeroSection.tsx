@@ -53,7 +53,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               onClick={handleWhatsAppClick}
-              className="bg-unir-dark-blue hover:bg-unir-vibrant-blue text-white rounded-full h-14 px-8 text-base font-semibold group transition-smooth"
+              className="bg-gradient-to-r from-unir-dark-blue to-unir-vibrant-blue hover:from-unir-vibrant-blue hover:to-unir-electric text-white rounded-full h-14 px-8 text-base font-semibold group transition-smooth"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               Vamos conversar
