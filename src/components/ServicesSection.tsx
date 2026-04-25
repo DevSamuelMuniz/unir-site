@@ -48,7 +48,7 @@ const ServicesSection = () => {
             </span>
             <h2 className="display-text text-5xl md:text-6xl lg:text-7xl font-bold text-unir-dark-blue mt-6 leading-none">
               Soluções desenhadas para{" "}
-              <span className="text-unir-vibrant-blue">desafios reais</span>.
+              <span className="bg-gradient-to-r from-unir-vibrant-blue to-unir-electric bg-clip-text text-transparent">desafios reais</span>.
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-md">
@@ -92,7 +92,7 @@ const ServicesSection = () => {
           <Button
             size="lg"
             onClick={handleWhatsAppClick}
-            className="bg-unir-dark-blue hover:bg-unir-vibrant-blue text-white rounded-full h-14 px-8 font-semibold"
+            className="bg-gradient-to-r from-unir-dark-blue to-unir-vibrant-blue hover:from-unir-vibrant-blue hover:to-unir-electric text-white rounded-full h-14 px-8 font-semibold"
           >
             <MessageCircle className="w-5 h-5 mr-2" />
             Fale com um especialista

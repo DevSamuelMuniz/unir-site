@@ -36,7 +36,7 @@ const SistemasSection = () => {
               Cases
             </span>
             <h2 className="display-text text-5xl md:text-6xl lg:text-7xl font-bold text-unir-dark-blue mt-6 leading-none">
-              Projetos que <span className="text-unir-vibrant-blue">geram impacto</span>.
+              Projetos que <span className="bg-gradient-to-r from-unir-vibrant-blue to-unir-electric bg-clip-text text-transparent">geram impacto</span>.
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-md">
