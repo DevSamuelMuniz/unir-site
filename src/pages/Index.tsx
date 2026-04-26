@@ -9,6 +9,7 @@ import EquipeSection from "@/components/EquipeSection";
 import InspirationalSection from "@/components/InspirationalSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <InspirationalSection />
       <ContactSection />
       <Footer />
+      <BackToTop />
     </main>
   );
 };
