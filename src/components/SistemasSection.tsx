@@ -28,7 +28,7 @@ const SistemasSection = () => {
     },
     {
       number: "Case 03",
-      name: "Unir FIT",
+      name: "UNIR FIT",
       tagline: "Forje sua melhor versão",
       description:
         "Ecossistema fitness definitivo para transformar disciplina em resultados reais. Gamificação, nutrição de elite e treinos impiedosos em um só app.",
