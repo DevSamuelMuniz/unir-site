@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 const AboutSection = () => {
   const stats = [
     { value: "100%", label: "Foco no cliente" },
-    { value: "2+", label: "Plataformas próprias" },
+    { value: "4+", label: "Plataformas próprias" },
     { value: "∞", label: "Propósito em cada projeto" },
   ];
 
