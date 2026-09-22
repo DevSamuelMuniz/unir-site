@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import mangoraScreenshot from "@/assets/mangora-screenshot.png";
 import fixonScreenshot from "@/assets/fixon-screenshot.png";
 import tattoosyScreenshot from "@/assets/tattoosy-screenshot.png";
 import unirfitScreenshot from "@/assets/unirfit-screenshot.png";
@@ -8,6 +9,16 @@ const SistemasSection = () => {
   const sistemas = [
     {
       number: "Case 01",
+      name: "Mangora",
+      tagline: "Gestão online para pequenos negócios",
+      description:
+        "Vendas, estoque e financeiro em um só lugar. Saiba quanto vendeu, o que tem para receber e organize a rotina do seu negócio com o Mangora.",
+      url: "https://mangora.com.br/",
+      tags: ["Gestão", "Vendas", "Financeiro"],
+      image: mangoraScreenshot,
+    },
+    {
+      number: "Case 02",
       name: "Fix-On",
       tagline: "Soluções rápidas para o dia a dia",
       description:
@@ -17,7 +28,7 @@ const SistemasSection = () => {
       image: fixonScreenshot,
     },
     {
-      number: "Case 02",
+      number: "Case 03",
       name: "Tattoosy",
       tagline: "Gestão completa para estúdios de tatuagem",
       description:
@@ -27,7 +38,7 @@ const SistemasSection = () => {
       image: tattoosyScreenshot,
     },
     {
-      number: "Case 03",
+      number: "Case 04",
       name: "UNIR FIT",
       tagline: "Forje sua melhor versão",
       description:
@@ -37,7 +48,7 @@ const SistemasSection = () => {
       image: unirfitScreenshot,
     },
     {
-      number: "Case 04",
+      number: "Case 05",
       name: "Prumo",
       tagline: "Gestão completa para barbearias",
       description:
